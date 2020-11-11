@@ -1,5 +1,6 @@
 package martian_robots.planet;
 
+import martian_robots.SpringIntegrationTest;
 import martian_robots.config.Configuration;
 import martian_robots.model.Coordinate;
 import martian_robots.model.Orientation;
@@ -14,10 +15,7 @@ import org.springframework.test.context.ContextConfiguration;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-@ActiveProfiles("test")
-@SpringBootTest
-@ContextConfiguration(classes = Configuration.class)
-public class PlanetServiceTest {
+public class PlanetServiceTest extends SpringIntegrationTest {
 
     @Autowired
     private PlanetService planetService;
