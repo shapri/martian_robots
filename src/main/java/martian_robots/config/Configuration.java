@@ -1,5 +1,7 @@
 package martian_robots.config;
 
+import martian_robots.api.ApiService;
+import martian_robots.api.ApiServiceImpl;
 import martian_robots.planet.Planet;
 import martian_robots.planet.PlanetImpl;
 import martian_robots.planet.PlanetService;
@@ -44,4 +46,11 @@ public class Configuration {
     public RobotService robotService(){
         return new RobotServiceImpl(planetService(), robots() );
     }
+
+    @Bean
+    public ApiService apiService() {
+        return new ApiServiceImpl(planetService(), robotService());
+    }
+
+
 }

@@ -1,7 +1,6 @@
 package martian_robots.robot;
 
 import martian_robots.SpringIntegrationTest;
-import martian_robots.config.Configuration;
 import martian_robots.model.Coordinate;
 import martian_robots.model.Instruction;
 import martian_robots.model.Orientation;
@@ -10,9 +9,6 @@ import martian_robots.planet.PlanetService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.ActiveProfiles;
-import org.springframework.test.context.ContextConfiguration;
 
 import java.util.Arrays;
 

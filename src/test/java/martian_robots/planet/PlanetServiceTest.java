@@ -1,16 +1,12 @@
 package martian_robots.planet;
 
 import martian_robots.SpringIntegrationTest;
-import martian_robots.config.Configuration;
 import martian_robots.model.Coordinate;
 import martian_robots.model.Orientation;
 import martian_robots.model.Position;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.ActiveProfiles;
-import org.springframework.test.context.ContextConfiguration;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
